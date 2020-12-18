@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Movie Recommendation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home1.css') }}">
+    </head>
+    <body style="background-image: url({{ url_for('static', filename='img/yours.png') }})">
+        <header>   
+          <div class="topnav">
+		   <img src="{{url_for('static', filename='img/pop.png')}}" alt="" height="100" width="80" vspace="0" hspace="4" align="left"/><br><br>
+		  <font face="Roboto","sans-serif", size="12" color="white" ><center> MOVIE ESCAPE</center> </font >
+		    <ul class="main-nav">
+                   <li class="active"><a href="{{ url_for('index') }}">HOME</a></li>
+                   <li><a href="{{ url_for('popularity') }}">POPULAR MOVIES</a></li>
+                   <li><a href="{{ url_for('topr') }}">TOP VOTED</a></li>
+                   
+              </ul>
+          </div>         
+    <div class="movie">
+       <form action="{{ url_for('main') }}" method="POST">
+	   <br>
+	   <br>
+		<center><font face="Roboto","sans-serif", size="6" color="white">Get your choice of movies  </font ><br>
+		<br>
+    
+            <input type="text" id="movie_name" name="movie_name" placeholder="Enter a movie name" required />
+			<br>
+			<br>
+            <input type="submit" id="submission_button" value="Submit"/>
+        </form>
+        <p style="color: #919191; padding: 1em;">The model uses <b>Content Based Recommendations</b> to find similar movies.<br><br> Intuitive idea behind is <i>"If a person likes a particular item, he/she will also like an item that is similar to it."</i> </p>
+        <br>
+        </div>	 
+        </header>
+    </body>
+</html>
+

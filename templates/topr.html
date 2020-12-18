@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Movie Recommendation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/topr.css') }}">
+    </head>
+    <body
+             
+          <div class="topnav">
+		   <img src="{{url_for('static', filename='img/pop.png')}}" alt="" height="100" width="80" vspace="0" hspace="4" align="left"/><br><br>
+		  <font face="Roboto","sans-serif", size="12" color="white" ><center> MOVIE ESCAPE</center> </font >
+		    <ul class="main-nav">
+                <li class="active"><a href="{{ url_for('index') }}">HOME</a></li>
+                <li><a href="{{ url_for('popularity') }}">POPULAR MOVIES</a></li>
+                <li><a href="{{ url_for('topr') }}">TOP VOTED</a></li>
+                
+              </ul>
+          </div> 
+		  <font face="Roboto","sans-serif", size="06" color="white" ><center> TOP MOVIES ACCORDING TO USER VOTING</center> </font >
+ <img src="{{url_for('static', filename='img/vote.jpg')}}" alt=""height="450" width="500"  align="right"/><br><br>			  
+	 <img src="{{url_for('static', filename='img/collage.jpg')}}" alt="" height="480" width="700" vspace="10" hspace="10" align="center"/><br><br>
+			 
+</body>
+
+</html>		  

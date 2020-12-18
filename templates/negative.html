@@ -1,0 +1,37 @@
+
+	<html>
+    <head>
+        <title>Movie Recommendation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/negetive1.css') }}">
+        
+    </head>
+    <body>
+	<header>
+	<div class="topnav">
+		   <img src="{{url_for('static', filename='img/pop.png')}}" alt="" height="100" width="80" vspace="2" hspace="4" align="left"/><br><br>
+		   <font face="Roboto","sans-serif", size="12" color="white" ><center> MOVIE ESCAPE</center> </font >
+		   </div>
+			  
+			  
+	<div class="error">
+                <div class="container-floud">
+                    <div class="col-xs-12 ground-color text-center">
+                       
+                        <h2 class="h1"><center>Sorry!Page not found. <br> Possible reason(s):</center></h2>
+                        <p><font face="garamond" size="10" color="white" >
+                           <center> Misspelled input.</center>
+                           <center> The movie name do not exists in the database.</center>
+						   </font></p>
+                           <input type="hidden" value="{{ name }}" id="movie_name" oninput="checkSimilarity()" readonly/>
+                        <hr>
+                        <p><center><font face="garamond" size="12" color="white" >Did you mean?</font></center></p>
+                        <span id="suggestions"></span>
+                    </div>
+                    <a class="button" href="{{ url_for('index') }}"><i class="fas fa-home"></i><center>Go Back to Home Page &amp; Try Again.</center></a>
+                </div>
+            </div>
+			</header>
+</body>
+</html>

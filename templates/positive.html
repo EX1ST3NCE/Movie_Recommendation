@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Movie Recommendation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/positive1.css') }}">
+        
+    </head>
+	<header>
+<body style="background-image: url({{ url_for('static', filename='img/yours.png') }})">
+<div class="topnav">
+		   <img src="{{url_for('static', filename='img/pop.png')}}" alt="" height="100" width="80" vspace="2" hspace="4" align="left"/><br><br>
+           <font face="Roboto","sans-serif", size="12" color="white" ><center> MOVIE ESCAPE</center> </font >
+		   </div>
+ <div class="movie">
+        <h2><b><center><font face="Garamond" size="06" color="white" >Here are your recommendations</font></center></b></h2>
+        <p>Showing results for: {{ search_name }}</p>
+        <table class="movie_table" align="center">
+            <tr>
+                <th>Movie Title</th>
+                <th>Release Date</th>
+            </tr>
+            <tbody class="table_body">
+                <tr>
+                    <td>{{ movie_names[0] }}</td>
+                    <td>{{ movie_date[0] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[1] }}</td>
+                    <td>{{ movie_date[1] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[2] }}</td>
+                    <td>{{ movie_date[2] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[3] }}</td>
+                    <td>{{ movie_date[3] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[4] }}</td>
+                    <td>{{ movie_date[4] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[5] }}</td>
+                    <td>{{ movie_date[5] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[6] }}</td>
+                    <td>{{ movie_date[6] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[7] }}</td>
+                    <td>{{ movie_date[7] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[8] }}</td>
+                    <td>{{ movie_date[8] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[9] }}</td>
+                    <td>{{ movie_date[9] }}</td>
+                </tr>
+            </tbody>
+        </table>
+		<br>
+		   <h2><b><center><font face="Garamond" size="06" color="white" >ENJOY!</font></center></b></h2>
+		</div>
+		</body>
+		</html>
