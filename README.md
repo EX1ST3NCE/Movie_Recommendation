@@ -4,3 +4,20 @@ Recommendation system aims to predict or take users’ interests and recommend r
 
 Content-based filtering techniques normally generate their predictions based on the user information, and does not rely on the contributions or ratings from other users as done in collaborative techniques.
 
+Our system provides a web application to the user in which user can give their inputs and generate outcomes based on their interest. It also displays the top rated movies and also the most popular movies among them.
+
+### Requirements
+
+To install the requirements, open cmd and type:
+
+```
+pip install -r requirements.txt
+```
+
+### Getting Started
+
+- How to use
+```
+git clone https://github.com/prasadnitin05/Movie_Recommendation.git
+cd Movie_Recommendation
+```
