@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 - How to use
 ```
-git clone https://github.com/prasadnitin05/Movie_Recommendation.git
+git clone https://github.com/EX1ST3NCE/Movie_Recommendation.git
 cd Movie_Recommendation
 ```
 ### Deploying the App
@@ -36,10 +36,10 @@ Then, open 127.0.0.1:5000 in the web browser.
 ### Results
 
 
-![alt Home page of movie recommendation system](https://github.com/prasadnitin05/Movie_Recommendation/blob/master/results/output1.PNG?raw=true)
+![alt Home page of movie recommendation system](https://github.com/EX1ST3NCE/Movie_Recommendation/blob/master/results/output1.PNG?raw=true)
 
 
-![alt Popular movies page](https://github.com/prasadnitin05/Movie_Recommendation/blob/master/results/output2.PNG?raw=true)
+![alt Popular movies page](https://github.com/EX1ST3NCE/Movie_Recommendation/blob/master/results/output2.PNG?raw=true)
 
 
-![alt Top voted movies](https://github.com/prasadnitin05/Movie_Recommendation/blob/master/results/output3.PNG?raw=true)
+![alt Top voted movies](https://github.com/EX1ST3NCE/Movie_Recommendation/blob/master/results/output3.PNG?raw=true)
